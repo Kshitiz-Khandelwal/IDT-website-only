@@ -1,22 +1,20 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Fingerprint } from "lucide-react"
-import { useState } from "react"
+import Link from "next/link";
+import { Fingerprint } from "lucide-react";
+import { useState } from "react";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="bg-opacity-20 bg-black backdrop-blur-md shadow-md">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Fingerprint className="h-8 w-8 text-pink-500" />
-          <span className="text-xl font-bold text-white" style={{ fontFamily: "Lobster, cursive" }}>
-            VeriFake
-          </span>
+          <span className="text-xl font-bold gradient-text lobster-font">VeriFake</span>
         </Link>
-        <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <button className="md:hidden text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           Menu
         </button>
         <ul className={`${isMenuOpen ? "block" : "hidden"} md:flex md:space-x-6 mt-4 md:mt-0`}>
@@ -53,6 +51,5 @@ export default function Header() {
         </ul>
       </nav>
     </header>
-  )
+  );
 }
-
