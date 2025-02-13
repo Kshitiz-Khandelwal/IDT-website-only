@@ -12,7 +12,7 @@ export default function Header() {
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Fingerprint className="h-8 w-8 text-pink-500" />
-          <span className="text-xl font-bold gradient-text lobster-font">VeriFake</span>
+          <span className="text-xl gradient-text lobster-font">VeriFake</span>
         </Link>
         <button className="md:hidden text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           Menu

@@ -14,7 +14,8 @@ export default function Hero() {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            AI That Detects the Lies, So You Can Trust the Truth.
+            "AI That Detects the Lies, So You Can Trust the Truth."
+            
           </h1>
           <p className="text-xl mb-8 max-w-2xl">
             Unmask the Fake. Trust the Real. VeriFake: AI-Powered Deepfake Detection for a Secure Digital Future.

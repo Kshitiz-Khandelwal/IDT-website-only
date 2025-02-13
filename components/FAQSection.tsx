@@ -37,7 +37,7 @@ export default function FAQSection() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+      <h2 className="text-3xl text-blue-200 font-bold mb-4">Frequently Asked Questions</h2>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className="border-b border-gray-200 pb-4">
@@ -45,7 +45,7 @@ export default function FAQSection() {
               className="flex justify-between items-center w-full text-left"
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
             >
-              <span className="text-lg font-medium">{faq.question}</span>
+              <span className="text-lg font-medium text-yellow-100">{faq.question}</span>
               {openIndex === index ? (
                 <ChevronUp className="h-5 w-5 text-gray-500" />
               ) : (
@@ -60,7 +60,7 @@ export default function FAQSection() {
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <p className="mt-2 text-gray-600">{faq.answer}</p>
+                  <p className="mt-2 text-gray-200">{faq.answer}</p>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -70,4 +70,3 @@ export default function FAQSection() {
     </motion.section>
   )
 }
-

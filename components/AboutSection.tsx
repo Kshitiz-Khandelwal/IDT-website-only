@@ -24,12 +24,10 @@ export default function AboutSection() {
         </p>
         <h2 className="text-3xl font-bold mb-4 text-blue-200">Applications</h2>
         <ul className="list-disc list-inside text-lg text-gray-300 mb-6">
-          <li>Media Verification: Helping news organizations authenticate user-generated content</li>
-          <li>
-            Social Media Monitoring: Assisting platforms in identifying and flagging potentially manipulated content
-          </li>
-          <li>Personal Security: Enabling individuals to verify the authenticity of received media</li>
-          <li>Legal and Forensic Analysis: Providing tools for digital evidence examination</li>
+          <li><span className="text-yellow-100">Media Verification:</span> Helping news organizations authenticate user-generated content</li>
+          <li><span className="text-yellow-100">Social Media Monitoring:</span> Assisting platforms in identifying and flagging potentially manipulated content</li>
+          <li><span className="text-yellow-100">Personal Security:</span> Enabling individuals to verify the authenticity of received media</li>
+          <li><span className="text-yellow-100">Legal and Forensic Analysis:</span> Providing tools for digital evidence examination</li>
         </ul>
       </motion.section>
     </div>
